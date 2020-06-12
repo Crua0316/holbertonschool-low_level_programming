@@ -5,16 +5,22 @@
  */
 int main(void)
 {
-	int a, a1;
+	int a, b;
 
 	for (a = '0'; a <= '9'; a++)
 	{
-		for (a1 = '0'; a1 <= '9'; a1++)
+		for (b = '0'; b <= '9'; b++)
 		{
 			putchar(a);
-			putchar(a1);
-			putchar(',');
-			putchar(' ');
+			putchar(b);
+			if (a == '9' && b == '9')
+			{
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
