@@ -1,8 +1,6 @@
 #include <stdio.h>
-
 /**
  * main - Print the numbers from 00 to 99
- *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -15,14 +13,8 @@ int main(void)
 		{
 			putchar(a);
 			putchar(a1);
-			if (a == '9' && a1 == '9')
-			{
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
