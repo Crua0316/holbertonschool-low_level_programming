@@ -5,18 +5,17 @@
  */
 void more_numbers(void)
 {
-	int n, n_tens, n_ones;
-	int c;
+	int a, b, c, d;
 
-	for (c = 1; c <= 10; c++)
+	for (d = 1; d <= 10; d++)
 	{
-		for (n = 0; n <= 14; n++)
+		for (a = 0; a <= 14; a++)
 		{
-			n_tens = n / 10;
-			n_ones = n % 10;
-			if (n > 9)
-				_putchar(n_tens + '0');
-			_putchar(n_ones + '0');
+			b = a / 10;
+			c = a % 10;
+			if (a > 9)
+				_putchar(b + '0');
+			_putchar(c + '0');
 		}
 		_putchar('\n');
 	}
