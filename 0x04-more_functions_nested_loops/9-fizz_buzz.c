@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print 1 thourgh 100 and Fizz for every 3 and buzz for every 5
+ * main - FizzBuzz
  *
  * Return: Always 0.
  *
