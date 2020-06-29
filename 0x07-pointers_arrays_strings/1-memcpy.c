@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _memset - Fills memory with a constant byte
+ * _memcpy - Fills memory with a constant byte
  * @dest: Pointer
  * @src: Variable char
  * @n: unsigned var
