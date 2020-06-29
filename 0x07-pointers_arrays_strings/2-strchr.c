@@ -4,7 +4,7 @@
  * _strchr - Fills memory with a constant byte
  * @s: Pointer
  * @c: Variable char
- * Return: dest
+ * Return: first ocurrence
  */
 
 char *_strchr(char *s, char c)
