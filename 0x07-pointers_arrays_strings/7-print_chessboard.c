@@ -8,13 +8,17 @@
 
 void print_chessboard(char (*a)[8])
 {
-int b, c;
+	int c1 = 0, c2 = 0;
 
-for (b = 0; b < 8; b++)
-{
-for (c = 0; c < 8; c++)
-_putchar(a[b][c]);
-if (c != 7)
-_putchar(10);
-}
+	while (c1 < 8)
+	{
+		c2 = 0;
+		while (c2 < 8)
+		{
+			_putchar(a[c1][c2]);
+			c2++;
+		}
+		_putchar(10);
+		c1++;
+	}
 }
