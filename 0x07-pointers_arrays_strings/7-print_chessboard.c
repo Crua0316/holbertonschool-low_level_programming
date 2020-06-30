@@ -1,24 +1,18 @@
 #include "holberton.h"
-
 /**
- * print_chessboard - Fills memory with a constant byte
- * @a: Pointer
- * Return: 0
+ * print_chessboard - print a chessboard
+ * @a: matrix
+ * Return: no return
  */
-
 void print_chessboard(char (*a)[8])
 {
-	int c1 = 0, c2 = 0;
+	int b, c;
 
-	while (c1 < 8)
+	for (b = 0; b < 8; b++)
 	{
-		c2 = 0;
-		while (c2 < 8)
-		{
-			_putchar(a[c1][c2]);
-			c2++;
-		}
+		for (c = 0; c < 8; c++)
+			_putchar(a[b][c]);
+		if (c != 7)
 		_putchar(10);
-		c1++;
 	}
 }
