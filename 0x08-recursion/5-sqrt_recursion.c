@@ -1,50 +1,37 @@
 #include "holberton.h"
 
 /**
- *_sqrt_recursion - blank
- * @n: blank
- * Return: balnk
+ * recursion - fint the square recursion of a number
+ * @a: Var1
+ * @b: Var2
+ * Return: square recursion of b
  */
-
-int _sqrt_recursion(int n)
+int recursion(int a, int b)
 {
-	if (n == 0)
+	if ((a * a) == b)
 	{
-		return (0);
+		return (a);
 	}
-	else if (n == 1)
-	{
-		return (1);
-	}
-	else if (n < 0)
+	else if ((a * a) > b)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (recursion(n, 1));
+		return (recursion(a + 1, b));
 	}
 }
 
 /**
- * recursion - recursion root
- * @a: number
- * @b: incrementor
- * Return: -1;
+ * _sqrt_recursion - returns the natural square recursion of a number
+ * @n: integer to find squre recursion
+ * Return: square recursion of n
  */
 
-int recursion(int a, int b)
+int _sqrt_recursion(int n)
 {
-	if (a == (b * b))
-	{
-		return (b);
-	}
-	else if (a > (b * b))
-	{
-		return (recursion(a, b + 1));
-	}
-	else
-	{
-		return (-1);
-	}
+	int c = 0;
+
+	n = recursion(c + 1, n);
+	return (n);
 }
