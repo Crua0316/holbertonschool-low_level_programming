@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * _puts_recursion - Prints a string
- * @s: Pointer to string
- * Return: void
+ *  _pow_recursion- Prints a string
+ * @x: Var
+ * @y: Var
+ * Return: Nothing
  */
 
 int _pow_recursion(int x, int y)
@@ -18,6 +19,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return (x * _pow_recursion(x, y -1));
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
