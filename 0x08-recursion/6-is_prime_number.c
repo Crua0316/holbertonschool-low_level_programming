@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * isprimenumber - prime numbers
- * @a: integer 
- * @b: integer 
+ * @a: integer
+ * @b: integer
  * Return: prime number if detected
  */
 int isprimenumber(int a, int b)
