@@ -1,45 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-
-/**
- * _strlen - returns the length
- * @s: pointer
- * Return: Nothing
- */
-unsigned int _strlen(char *s)
-{
-	unsigned int a = 0;
-
-	while (*(s + a) != '\0')
-	{
-		a++;
-	}
-
-	return (a);
-}
-
-/**
- * _strcpy - Function that copies the string pointed to
- * @dest: Pointer to string entry
- * @src: Destiny
- * Return: Dest
- */
-
-void *_strcpy(char *dest, char *src)
-{
-	int a = 0;
-
-	if (src != '\0')
-	{
-		for (a = 0;  *(src + a) != '\0'; a++)
-		{
-			*(dest + a) = *(src + a);
-		}
-	}
-
-	*(dest + a) = '\0';
-	return (dest);
-}
+#include "strlen.h"
 
 /**
  * new_dog - function that creates a new dog
