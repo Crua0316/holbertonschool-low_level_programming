@@ -4,7 +4,7 @@
  * @n: Value decimal
  * @index:  is the index, starting from 0 of the bit you want to get
  *
- * Return: 
+ * Return: 1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
