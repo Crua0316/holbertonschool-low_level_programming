@@ -40,9 +40,9 @@ int main(int ac, char **av)
 	}
 	close(fl_from);
 	if (fl_from == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", av[1]), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", av[1]), exit(100);
 	close(fl_to);
 	if (fl_to == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", av[2]), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", av[2]), exit(100);
 	return (0);
 }
