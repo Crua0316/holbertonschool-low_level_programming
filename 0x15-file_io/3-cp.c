@@ -4,7 +4,7 @@
  * main - copies the content of a file to another file
  * @ac: count of argument
  * @av: arrays of argument
- * 
+ *
  * Return: 0
  */
 
@@ -14,7 +14,7 @@ int main(int ac, char **av)
 	int fl_from, fl_to, fl_r, fl_w;
 	char buff[1024];
 
-	if (ac !=3)
+	if (ac != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	fl_from = open(av[1], O_RDONLY);
 	if (fl_from == -1)
@@ -26,8 +26,7 @@ int main(int ac, char **av)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
-	do
-	{
+	do {
 		fl_r = read(fl_from, buff, 1024);
 		fl_w = write(fl_to, buff, fl_r);
 	} while (fl_r == 1024);
