@@ -38,11 +38,9 @@ int main(int ac, char **av)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
-	close(fl_from);
-	if (fl_from == -1)
+	if ((close)fl_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fl_from), exit(100);
-	close(fl_to);
-	if (fl_to == -1)
+	if ((close)fl_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fl_to), exit(100);
 	return (0);
 }
