@@ -8,7 +8,6 @@
  * Return: 0
  */
 
-
 int main(int ac, char **av)
 {
 	int fl_from, fl_to, fl_r, fl_w;
